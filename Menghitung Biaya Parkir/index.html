@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Menghitung Biaya Parkir</title>
+    <link rel="stylesheet" href="Asset/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="judul">
+        <h2>Menghitung Biaya Parkir</h2><br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Masukan Nilai</th>
+                <th colspan="2">Biaya Parkir</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Jam Masuk Parkir :
+                    </td>
+                    <td>
+                        <input type="Number" placeholder="Masukan Jam Masuk Parkir" size="10" id="masuk"/>
+                    </td>
+                    <td rowspan="2">
+                        <button onclick="hitungParkir()">  Biaya Parkir : (Klik Disini)</button>
+                    </td>
+                    <td rowspan="2">
+                        <span id="biaya"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Jam Keluar Parkir : (Klik Disini)
+                    </td>
+                    <td>
+                        <input type="Number" placeholder="Masukan Jam Masuk Parkir" size="10" id="keluar"/>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+        </div>
+    </div>
+    <script src="Asset/script.js"></script>
+</body>
+</html>

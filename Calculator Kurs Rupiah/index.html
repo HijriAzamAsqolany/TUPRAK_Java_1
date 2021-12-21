@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Kurs</title>
+    <link rel="stylesheet" href="Asset/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="currecy-box">
+            <h2>Calculator Kurs Rupiah</h2><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Masukan Nilai</th>
+                        <th>Mata Uang</th>
+                        <th>Nilai Rupiah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" name="money_val" id="money_val"></td>
+                        <td>
+                            <select onchange="countMoney();" name="currency_select" id="currency_select">
+                                <option id="currency_default" value="not_select">Not Selected</option>
+                                <option id="currency_1" value="dolar_us">Dollar Us</option>
+                                <option id="currency_2" value="dolar_singapore">Dollar Singapore</option>
+                                <option id="currency_3" value="ringgit_malaysia">Ringgit Malaysia</option>
+                                <option id="currency_4" value="yen_jepang">Yen Jepang</option>
+                                <option id="currency_5" value="euro">Euro</option>
+                                <option id="currency_6" value="riyal_arab">Riyal Arab Saudi</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div id="result">0</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Asset/script.js" type="text/javascript"></script>
+
+</body>
+</html>
